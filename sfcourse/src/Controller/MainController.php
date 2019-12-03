@@ -20,6 +20,8 @@ class MainController extends AbstractController
 
     /**
      * @Route("/custom/{name?}", name="custom")
+     * @param Request $request
+     * @return Response
      */
     public function custom(Request $request){
         dump($request);
