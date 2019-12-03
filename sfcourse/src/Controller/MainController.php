@@ -13,6 +13,7 @@ class MainController extends AbstractController
     public function index()
     {
         return $this->render('main/index.html.twig', [
+            'message' => 'new symfony',
             'controller_name' => 'MainController',
         ]);
     }
