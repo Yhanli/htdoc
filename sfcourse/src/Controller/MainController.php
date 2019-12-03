@@ -17,14 +17,14 @@ class MainController extends AbstractController
         return new Response('<h1> Hello there</h1>');
     }
 
-
     /**
      * @Route("/custom/{name?}", name="custom")
      * @param Request $request
      * @return Response
      */
+
     public function custom(Request $request){
         dump($request);
-        return new Response('<h1>Welcome !</h1>');
+        return new Response('Welcome !');
     }
 }
