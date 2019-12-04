@@ -3,4 +3,6 @@
 
 {% block body %}
     <h1>{{ post.title }}</h1>
+    <img src="{{ '/uploads/' ~ post.image }}" alt="">
+    <h2>{{ post.category }}</h2>
 {% endblock %}

@@ -44,7 +44,14 @@ class PostController extends AbstractController
         if($form->isSubmitted() ){
             //entity manager
             $em = $this->getDoctrine()->getManager();
-//            dump($post);
+            dump($request->files);
+
+            /** @var UploadedFile $file */
+            $file = $request->files->get('post')['attachment'];
+            if($file){
+
+                $post->setImage($filename);
+            }
             $em->persist($post);
             $em->flush();
             return $this->redirect($this->generateUrl('post.index'));
@@ -69,7 +76,7 @@ class PostController extends AbstractController
 //    public function show($id, PostRepository $postRepository){
 //        $post= $postRepository->find($id);
 //        dump($post); die;
-    public function show(Post $post){  # using param converter
+    public function show(Post $post ){  # using param converter
 //        dump($post); die;
 
 //         create the show view
