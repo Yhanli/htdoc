@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Entity\Post;
 use App\Form\PostType;
 use App\Repository\PostRepository;
+use App\Services\FileUploader;
+use App\Services\Notification;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,6 +21,7 @@ class PostController extends AbstractController
     /**
      * @Route("/", name="index")
      * @param PostRepository $postRepository
+     * @param FileUploader $fileUploader
      * @return Response
      */
     public function index(PostRepository $postRepository)
@@ -30,10 +33,15 @@ class PostController extends AbstractController
             'posts'=>$posts
         ]);
     }
+
     /**
      * @Route("/create", name="create")
+     * @param Request $request
+     * @param FileUploader $fileUploader
+     * @param Notification $notification
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
      */
-    public function create(Request $request){
+    public function create(Request $request, FileUploader $fileUploader, Notification $notification){
         //create a new post with title
         $post = new Post();
 
@@ -49,11 +57,13 @@ class PostController extends AbstractController
             /** @var UploadedFile $file */
             $file = $request->files->get('post')['attachment'];
             if($file){
+                $filename = $fileUploader->uploadFile($file);
 
                 $post->setImage($filename);
+                $em->persist($post);
+                $em->flush();
             }
-            $em->persist($post);
-            $em->flush();
+
             return $this->redirect($this->generateUrl('post.index'));
         }
 
