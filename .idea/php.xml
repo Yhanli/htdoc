@@ -37,6 +37,44 @@
       <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/twig-pack" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/sfcourse/vendor/symfony/web-profiler-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
