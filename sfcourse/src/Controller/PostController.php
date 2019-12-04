@@ -40,8 +40,8 @@ class PostController extends AbstractController
         $form = $this->createForm(PostType::class,$post);
 
         $form->handleRequest($request);
-
-        if($form->isSubmitted()){
+        $form->getErrors(); # display all the errors
+        if($form->isSubmitted() ){
             //entity manager
             $em = $this->getDoctrine()->getManager();
 //            dump($post);
@@ -49,10 +49,6 @@ class PostController extends AbstractController
             $em->flush();
             return $this->redirect($this->generateUrl('post.index'));
         }
-
-
-
-
 
 
         //return a response
